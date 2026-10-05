@@ -10664,7 +10664,7 @@ export const services: ServiceDef[] = [
     endpoints: [
       {
         route: "POST /v1/license/verify",
-        desc: "Verify a contractor or professional license by number or name (CA, FL, OR, TX, VA, WA); FL and OR include the matching business entity",
+        desc: "Verify a contractor or professional license by number or name (CA, FL, MN, OR, TX, VA, WA); FL and OR include the matching business entity",
         amount: "20000",
         unitType: "request",
       },
