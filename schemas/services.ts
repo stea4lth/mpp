@@ -10634,7 +10634,7 @@ export const services: ServiceDef[] = [
     url: "https://flipvo.com",
     serviceUrl: "https://api.flipvo.com",
     description:
-      "Pay-per-call US verification data for agents: contractor license verify and search (CA, FL, OR, TX, VA, WA), state business entities (CO, CT, FL, NY, OR), IRS nonprofit status, OFAC sanctions and HHS-OIG exclusion screening, OSHA enforcement history, FMCSA carrier authority, and drive-time routing.",
+      "Pay-per-call US verification data for agents: contractor license verify and search (CA, FL, OR, TX, VA, WA), state business entities (CO, CT, FL, NY, OR), IRS nonprofit status, OFAC sanctions and HHS-OIG exclusion screening, NPI verification (CMS NPPES), OSHA enforcement history, FMCSA carrier authority, and drive-time routing.",
     icon: "https://flipvo.com/favicon.svg",
     categories: ["data", "search"],
     integration: "first-party",
@@ -10646,6 +10646,7 @@ export const services: ServiceDef[] = [
       "kyb",
       "sanctions",
       "nonprofits",
+      "healthcare",
       "trucking",
       "osha",
       "routing",
@@ -10694,6 +10695,12 @@ export const services: ServiceDef[] = [
       {
         route: "POST /v1/exclusions/screen",
         desc: "Screen a person or business by name or NPI against the HHS-OIG LEIE (Medicare and Medicaid exclusions)",
+        amount: "10000",
+        unitType: "request",
+      },
+      {
+        route: "POST /v1/npi/verify",
+        desc: "Verify 1-10 NPIs against CMS NPPES (active, deactivated or not found) with HHS-OIG LEIE exclusions by NPI",
         amount: "10000",
         unitType: "request",
       },
