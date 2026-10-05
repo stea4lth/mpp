@@ -10634,7 +10634,7 @@ export const services: ServiceDef[] = [
     url: "https://flipvo.com",
     serviceUrl: "https://api.flipvo.com",
     description:
-      "Pay-per-call US verification data for agents: contractor license verify and search (CA, FL, OR, TX, VA, WA), state business entities (CO, CT, FL, NY, OR), IRS nonprofit status, OFAC sanctions and HHS-OIG exclusion screening, NPI verification (CMS NPPES), OSHA enforcement history, FMCSA carrier authority, and drive-time routing.",
+      "Pay-per-call US verification data for agents: contractor license verify and search (CA, FL, MN, OR, TX, VA, WA), state business entities (CO, CT, FL, NY, OR), IRS nonprofit status, OFAC sanctions and HHS-OIG exclusion screening, NPI verification (CMS NPPES), OSHA enforcement history, FMCSA carrier authority, and drive-time routing.",
     icon: "https://flipvo.com/favicon.svg",
     categories: ["data", "search"],
     integration: "first-party",
@@ -10670,7 +10670,7 @@ export const services: ServiceDef[] = [
       },
       {
         route: "POST /v1/license/search",
-        desc: "Search licensed contractors by trade and city, zip or county (CA, FL, OR, TX, VA, WA)",
+        desc: "Search licensed contractors by trade and city, zip or county (CA, FL, MN, OR, TX, VA, WA)",
         amount: "50000",
         unitType: "request",
       },
